@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from 'react'
 import SmileyStudio from '../ContentElements/SmileyStudio'
-import CurvedText from '../ContentElements/curvedText'
+import CurvedText from '../ContentElements/CurvedText'
 import CurvedImage from '../ContentElements/CurvedImage'
 import EmailSecion from '../ContentElements/EmailSecion'
 import gsap from 'gsap'
