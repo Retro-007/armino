@@ -1,0 +1,160 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+body {
+  background-color: #88b2c4;
+  user-select: none;
+}
+*,
+:after,
+:before {
+  box-sizing: border-box;
+}
+.should-animate {
+  opacity: 0;
+  will-change: opacity, transform;
+}
+
+/* Style the scrollbar in Webkit-based browsers */
+::-webkit-scrollbar {
+  width: 0px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #fafafa;
+  border-radius: 1px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.rotate-element {
+  transition: transform 0.5s ease;
+}
+.rotate-element:hover {
+  transform: rotate(180deg);
+}
+
+.playground-image {
+  height: 2.2rem;
+  width: 2.2rem;
+  color: black;
+}
+.rotate-star {
+  cursor: pointer;
+  transition: transform 0.4s ease;
+}
+
+.rotate-star:hover {
+  transform: rotate(90deg);
+}
+.content-body {
+  height: auto;
+}
+
+.content-body .fake-div {
+  min-height: 60vw;
+  top: 50vw;
+}
+
+.pb-73 {
+  padding-bottom: 73%;
+}
+
+.curved-background {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  line-height: 0;
+  width: 100%;
+  height: 100vw;
+  background-color: #f3eee8;
+  border-radius: 50% 50% 0% 0%;
+}
+
+.content-body .upper-row .curved-text {
+  padding: 0 11vw;
+  margin-top: 15.75vw;
+}
+
+@media (min-width: 600px) {
+  .content-body .upper-row .curved-text {
+    top: 0;
+  }
+}
+
+.perspective {
+  perspective: 1000px;
+}
+
+@media (min-width: 600px) {
+  .content-body .curved-image {
+    padding-top: 15vw;
+  }
+}
+.content-body .curved-image {
+  padding-top: 30vw;
+}
+
+.curved-img {
+  height: auto;
+  width: 37vw;
+}
+
+.arrow-img {
+  height: 5vw;
+  width: 5vw;
+}
+@media (max-width: 600px) {
+  .arrow-img {
+    width: 5vw;
+    height: 5vw;
+  }
+}
+.arrow-content {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (min-width: 600px) {
+  .arrow-content {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    top: 54px;
+    align-items: center;
+  }
+}
+
+.bg-primary-color {
+  background-color: #f3eee8;
+}
+
+.content-s .top-decrease {
+  top: -80px;
+}
+@media (max-width: 800px) {
+  .content-s .top-decrease {
+    top: -20px;
+  }
+}
+
+.pad-10 {
+  padding-top: 20px;
+}
+
+@media (max-width: 600px) {
+  .content-s .talk-to-us {
+    top: 300px;
+  }
+}

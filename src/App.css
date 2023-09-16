@@ -1,0 +1,57 @@
+.logo {
+  width: 7rem;
+  height: 4rem;
+}
+
+.ease-in-out-anim {
+  opacity: 0;
+  animation: fadeIn 1s ease-in-out forwards;
+}
+
+.content-body .smiley-studio {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 4rem;
+  height: 4rem;
+  z-index: 100;
+}
+
+@media (min-width: 812px) {
+  .content-body .smiley-studio {
+    top: 7.5vw;
+    width: 6vw;
+    height: 6vw;
+  }
+}
+
+.swing-smiley {
+  -webkit-animation: rotate 1.6s ease-in-out infinite;
+  animation: rotate 1.6s ease-in-out infinite;
+  animation-direction: alternate-reverse;
+}
+@keyframes rotate {
+  0% {
+    transform: rotate(-30deg);
+  }
+  100% {
+    transform: rotate(30deg);
+  }
+}
+.text-width-responsive {
+  font-size: 1em;
+}
+@media (max-width: 800px) {
+  .text-width-responsive {
+    font-size: 3vw;
+  }
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
