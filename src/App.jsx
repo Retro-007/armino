@@ -14,6 +14,7 @@ function App() {
     ScrollTrigger.normalizeScroll(true)
 
     // Initialize ScrollTrigger
+    // eslint-disable-next-line no-unused-vars
     let smoother = ScrollSmoother.create({
       smooth: 1,
       effects: true,
